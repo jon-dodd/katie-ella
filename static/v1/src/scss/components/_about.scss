@@ -1,0 +1,34 @@
+//==========================================================================
+//   ABOUT
+//==========================================================================
+
+.about {
+    padding: 0; 
+    margin: 0; 
+    
+    @media all and (min-width: $lap-start) {
+        padding: $spacing; 
+    }
+    
+    p {
+        margin: -$spacing*1.8 0 0 0;
+        text-align: center; 
+        background: $colour-grey;
+        padding: $spacing; 
+        
+        
+    }
+}
+
+    .about__avatar {
+        border-radius: 50%;
+        float: none;
+        margin: $spacing auto; 
+        width: 120px;
+        display: block; 
+        border: 8px solid $colour-grey; 
+        
+        @media all and (min-width: $lap-start) {
+	        margin: 0 auto $spacing auto; 
+        }
+    }

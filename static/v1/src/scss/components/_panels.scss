@@ -1,0 +1,28 @@
+//==========================================================================
+//   PANELS
+//==========================================================================
+
+	* {
+		box-sizing: border-box; 
+	}
+	
+	body {
+		background: url('../img/bg.jpg') repeat;
+	}
+	
+	.wrapper {
+        max-width: $page-width;
+        margin: 0 auto; 
+        padding: 0 $spacing/2; 
+        background:url("../img/fabric_of_squares_gray.png") repeat;
+        @include prefix(box-shadow, $box-shadow); 
+        
+        @media all and (max-width: $page-width) {
+	        overflow: hidden; 
+        }
+	}
+	
+    	.wrapper__inner {
+        	border-left: 2px dashed $colour-grey; 
+    		border-right: 2px dashed $colour-grey; 
+    	}

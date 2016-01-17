@@ -1,0 +1,21 @@
+//==========================================================================
+//   PANELS
+//==========================================================================
+
+	* {
+		box-sizing: border-box; 
+	}
+	
+	body {
+		// background:url("../img/fabric_of_squares_gray.png") repeat;
+	}
+	
+	.wrapper {
+
+	}
+	
+		.container {
+			max-width: $page-width;
+	        margin: 0 auto; 
+	        padding: 0 $spacing/2; 
+		}

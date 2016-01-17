@@ -1,0 +1,40 @@
+//==========================================================================
+//   ABOUT
+//==========================================================================
+
+.about {
+    padding: 0; 
+    margin: 0 auto; 
+    max-width: 800px;
+    
+    @media all and (min-width: $lap-start) {
+        margin: $spacing auto; 
+    }
+    
+    p {
+        margin: -$spacing*1.8 0 0 0;
+        text-align: center; 
+        background: lighten($colour-grey,2%);
+        padding: $spacing; 
+        @extend .paragraph--lede; 
+       
+        
+        @media all and (min-width: $lap-start) {
+	        font-size: $size-largest; 
+	        font-weight: $weight-light; 
+        }
+    }
+}
+
+    .about__avatar {
+        border-radius: 50%;
+        float: none;
+        margin: $spacing auto; 
+        width: 120px;
+        display: block; 
+        border: 8px solid lighten($colour-grey,2%); 
+        
+        @media all and (min-width: $lap-start) {
+	        margin: 0 auto $spacing auto; 
+        }
+    }
