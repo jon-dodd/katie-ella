@@ -1,11 +1,11 @@
 <h1 class="page-title margin--top">{{ page.title }}</h1>
 
-<div class="padding--bottom">
+<div class="padding--bottom container--thin">
   {{ page.content }}
 </div>
 
 
-<div class="form form--inline">
+<div class="form form--inline margin--bottom">
   {% form 'contact' %}
 
     {% if form.posted_successfully? %}
@@ -36,7 +36,7 @@
         <label for="ContactFormMessage" class="label--hidden">{{ 'contact.form.message' | t }}</label>
         <textarea rows="10" id="ContactFormMessage" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
     </div>
-    
+
     <input type="submit" class="btn right" value="{{ 'contact.form.send' | t }}">
 
   {% endform %}

@@ -5,46 +5,46 @@
 	form,
 	.form {
 		padding: 0;
-		margin: 0; 
-		
+		margin: 0;
+
 		ol {
-			list-style: none; 
-			margin: 0; 
-			padding: 0; 
+			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
-		
+
 		li,
 		.form__question {
-			margin: 0; 
-			padding: 0; 
-			margin-bottom: $spacing; 
-			position: relative; 
+			margin: 0;
+			padding: 0;
+			margin-bottom: $spacing;
+			position: relative;
 		}
-		
-		
+
+
 		@media all and (max-width: 600px) {
 			thead {
-				display: none; 
+				display: none;
 			}
-			
+
 			tr {
-				border-bottom: 1px solid $colour-grey; 
+				border-bottom: 1px solid $colour-grey;
 			}
-			
+
 			td {
 				display: block;
 				width: 100%;
-				margin: 0; 
-				border-bottom: none; 
-				
+				margin: 0;
+				border-bottom: none;
+
 				label {
-					visibility: visible !important; 
+					visibility: visible !important;
 					width: auto;
-					height: auto; 
+					height: auto;
 					font-size: $size-base;
 					position: relative;
 					top: auto;
-					left: auto; 
+					left: auto;
 				}
 			}
 		}
@@ -52,36 +52,36 @@
 
 		fieldset {
 			padding: 0;
-			margin: 0; 
-			border: 0; 
-			
+			margin: 0;
+			border: 0;
+
 			+ fieldset {
-				margin-top: $spacing*2; 
+				margin-top: $spacing*2;
 			}
 		}
-		
+
 			legend,
 			.legend {
-				@extend .h2; 
+				@extend .h2;
 			}
 
 		.form__progress {
-			margin: 0 0 $spacing auto; 
+			margin: 0 0 $spacing auto;
 		}
-		
+
 			.bar {
-				height: $spacing; 
+				height: $spacing;
 				width: 100%;
 				background: $colour-grey;
-				overflow: hidden; 
+				overflow: hidden;
 			}
-			
+
 				.bar__progress {
-					background: $colour-primary; 
+					background: $colour-primary;
 					position: relative;
-					display: block; 
-					height: $spacing; 
-					
+					display: block;
+					height: $spacing;
+
 					&:after {
 						left: 100%;
 						top: 50%;
@@ -99,29 +99,29 @@
 				}
 
 @media all and (min-width: 600px) {
-	.form--inline {	
-		
+	.form--inline {
+
 		li,
 		.form__question {
-			overflow: auto; 
+			overflow: auto;
 		}
-		
+
 		label,
 		.label {
-			width: 35%; 
-			float: left; 
+			width: 35%;
+			float: left;
 			text-align: right;
-			margin: 0; 
-			padding: $spacing; 
-			
+			margin: 0;
+			padding: $spacing/2; 
+
 			+label {
-				float: right; 
+				float: right;
 				width: 65%;
-				padding: $spacing/2 0; 
-				text-align: left; 
+				padding: $spacing/2 0;
+				text-align: left;
 			}
 		}
-		
+
 		input[type="text"],
 		input[type="email"],
 		input[type="password"],
@@ -133,17 +133,17 @@
 		select {
 			width: 65%;
 			float: right;
-		
+
 			+ button,
 			+ .button,
 			+ input[type="button"] {
 				bottom: auto;
-				top: 0; 
-			}	
+				top: 0;
+			}
 		}
-		
+
 		input[type="submit"] {
-			margin-left: 35%; 
+			margin-left: 35%;
 		}
 	}
 }
