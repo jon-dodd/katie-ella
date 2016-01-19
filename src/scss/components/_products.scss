@@ -75,6 +75,10 @@
 		overflow: auto;
 	}
 
+    .selector-wrapper {
+        margin-bottom: $spacing; 
+    }
+
 	input[type='number'] {
 		width: 100px;
 		float: left;

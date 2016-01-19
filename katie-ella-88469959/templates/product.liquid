@@ -61,19 +61,23 @@
           </div>
 
           <form class="form" action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
-            <!-- <select name="id" id="productSelect" class="margin--bottom product-single__variants">
-              {% for variant in product.variants %}
-                {% if variant.available %}
+               {% if product.variants.size >= 2 %}
+                  <div class="margin--bottom">
+                    <select name="id" class="product-single__variants">
+                      {% for variant in product.variants %}
+                        {% if variant.available %}
 
-                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+                          <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
 
-                {% else %}
-                  <option disabled="disabled">
-                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
-                  </option>
-                {% endif %}
-              {% endfor %}
-            </select> -->
+                        {% else %}
+                          <option disabled="disabled">
+                            {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                          </option>
+                        {% endif %}
+                      {% endfor %}
+                    </select>
+                </div>
+            {% endif %}
 
             <div class="product-single__quantity{% unless settings.product_quantity_enable %} is-hidden{% endunless %}">
               <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
