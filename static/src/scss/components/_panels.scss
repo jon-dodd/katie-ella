@@ -3,19 +3,23 @@
 //==========================================================================
 
 	* {
-		box-sizing: border-box; 
+		box-sizing: border-box;
 	}
-	
+
 	body {
-		// background:url("../img/fabric_of_squares_gray.png") repeat;
+		border: 5px solid $colour-grey;
+		
+		@media all and (min-width: $desk-start) {
+			border: 15px solid $colour-grey;
+		}
 	}
-	
+
 	.wrapper {
 
 	}
-	
+
 		.container {
 			max-width: $page-width;
-	        margin: 0 auto; 
-	        padding: 0 $spacing/2; 
+	        margin: 0 auto;
+	        padding: 0 $spacing/2;
 		}

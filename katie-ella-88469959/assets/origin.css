@@ -2386,8 +2386,8 @@ input[type="submit"].button--block {
 
 @font-face {
   font-family: "niche";
-  src: url("../fonts/niche.eot");
-  src: url("../fonts/niche.eot?#iefix") format("embedded-opentype"), url("f../onts/niche.woff") format("woff"), url("../fonts/niche.ttf") format("truetype"), url("../fonts/niche.svg#niche") format("svg");
+  src: url("niche.eot");
+  src: url("niche.eot?#iefix") format("embedded-opentype"), url("niche.woff") format("woff"), url("niche.ttf") format("truetype"), url("niche.svg#niche") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -3341,13 +3341,22 @@ fieldset + fieldset {
     text-decoration: none;
     color: #272727;
   }
-  .breadcrumb li:first-child a:before {
+  .breadcrumb a:first-child:before {
     content: "H";
   }
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  border: 5px solid #f2f2f2;
+}
+@media all and (min-width: 992px) {
+  body {
+    border: 15px solid #f2f2f2;
+  }
 }
 
 .container {

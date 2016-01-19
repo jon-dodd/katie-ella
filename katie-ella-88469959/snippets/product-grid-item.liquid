@@ -18,9 +18,8 @@
   {% assign sold_out = false %}
 {% endif %}
 
-<div class="grid__item {{grid_item_width}}{% if sold_out %} sold-out{% endif %}{% if on_sale %} on-sale{% endif %}">
-  <a href="{{ product.url | within: collection }}" class="grid-link text-center">
-    <span class="grid-link__image grid-link__image--product">
+<div class="col-md-2 col-sm-4 col-xs-6">
+  <a href="{{ product.url | within: collection }}" class="product" >
       {% if on_sale and settings.collections_show_sale_circle %}
         <span class="badge badge--sale">
           <span class="badge__text{% if sale_text.size > 7 %} badge__text--small{% endif %}">{{ 'products.product.sale' | t }}</span>
@@ -31,20 +30,18 @@
           <span class="badge__text{% if sold_out_text.size > 9 %} badge__text--small{% endif %}">{{ 'products.product.sold_out' | t }}</span>
         </span>
       {% endif %}
-      <span class="grid-link__image-centered">
-        <img src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
-      </span>
+    <img class="product__thumb" src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
     </span>
-    <p class="grid-link__title">{{ product.title }}</p>
+    <h3 class="product__title">{{ product.title }}</h3>
     {% comment %}
       <p class="grid-link__title grid-link__vendor">{{ product.vendor }}</p>
     {% endcomment %}
-    <p class="grid-link__meta">
+    <span class="h4 product__price">
       {% capture price %}{{ product.price | money }}{% endcapture %}
       {% if on_sale %}
       <s class="grid-link__sale_price">{{ product.compare_at_price | money }}</s>
       {% endif %}
       {% if product.price_varies %}{{ 'products.general.from_html' | t: price: price }}{% else %}{{ price }}{% endif %}
-    </p>
+  </span>
   </a>
 </div>
