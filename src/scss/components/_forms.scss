@@ -80,7 +80,7 @@
 
 		label,
 		.label {
-			width: 35%;
+			width: 25%;
 			float: left;
 			text-align: right;
 			margin: 0;
@@ -88,7 +88,7 @@
 
 			+label {
 				float: right;
-				width: 65%;
+				width: 50%;
 				padding: $spacing/2 0;
 				text-align: left;
 			}
@@ -103,7 +103,8 @@
 		input[type="search"],
 		textarea,
 		select {
-			width: 65%;
+			width: 50%;
+			margin-right: 25%; 
 			float: right;
 
 			+ button,
@@ -115,7 +116,7 @@
 		}
 
 		input[type="submit"] {
-			margin-left: 35%;
+			margin-left: 25%;
 		}
 	}
 }

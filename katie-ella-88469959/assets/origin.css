@@ -3014,7 +3014,7 @@ fieldset + fieldset {
   }
   .form--inline label,
   .form--inline .label {
-    width: 35%;
+    width: 25%;
     float: left;
     text-align: right;
     margin: 0;
@@ -3023,7 +3023,7 @@ fieldset + fieldset {
   .form--inline label + label,
   .form--inline .label + label {
     float: right;
-    width: 65%;
+    width: 50%;
     padding: 15px 0;
     text-align: left;
   }
@@ -3036,7 +3036,8 @@ fieldset + fieldset {
   .form--inline input[type="search"],
   .form--inline textarea,
   .form--inline select {
-    width: 65%;
+    width: 50%;
+    margin-right: 25%;
     float: right;
   }
   .form--inline input[type="text"] + button,
@@ -3070,7 +3071,7 @@ fieldset + fieldset {
     top: 0;
   }
   .form--inline input[type="submit"] {
-    margin-left: 35%;
+    margin-left: 25%;
   }
 }
 .header__logo {
