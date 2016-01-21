@@ -104,21 +104,21 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12 margin--bottom-lap">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
                         <h3 class="footer__title">Useful links</h3>
-                        <ul class="list--unstyled">
+                        <ul class="list--unstyled footer__links">
                         {% for link in linklists.footer.links %}
                           <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                         {% endfor %}
                         </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-6">
                         <h3 class="footer__title">Contact us</h3>
-                        <p>You can email me on <br><a href="mailto:hello@katie-ella.co.uk">hello@katie-ella.co.uk</a><br> or get in touch via my <br><a href="/contact">contact page</a>
+                        <p><span class="not-palm">You can email me on <br></span><a href="mailto:hello@katie-ella.co.uk">hello@katie-ella.co.uk</a><br> or get in touch via my <br><a href="/contact">contact page</a>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="col-md-3 col-sm-4 not-palm">
                         <h3 class="footer__title">Social media</h3>
-                        <ul class="list--unstyled">
+                        <ul class="list--unstyled footer__links">
                             <li class="icon-facebook"><a href="https://www.facebook.com/Katie.ella.designs">Facebook</a></li>
                             <li class="icon-twitter"><a href="https://twitter.com/KatieEllaCreate">Twitter</a></li>
                             <li class="icon-pinterest"><a href="#">Pinterest</a></li>

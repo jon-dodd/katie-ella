@@ -2888,7 +2888,7 @@ th {
 
 .footer {
   background: #f2f2f2;
-  padding: 0 15px 15px 15px;
+  padding: 0 7.5px 7.5px 7.5px;
 }
 .footer a:hover {
   color: #ea6e25;
@@ -2903,6 +2903,7 @@ th {
   width: 75%;
   float: left;
   color: #272727;
+  border: none;
 }
 @media all and (max-width: 480px) {
   .footer__newsletter input[type='email'] {
@@ -2932,6 +2933,10 @@ th {
 
 .footer__title {
   margin-bottom: 15px;
+}
+
+.footer__links li {
+  margin-bottom: 15px !important;
 }
 
 .footer__smallprint {

@@ -24,7 +24,7 @@
             {% assign child_list_handle = link.title | handleize %}
             {% if linklists[child_list_handle].links != blank %}
               <li class="nav__parent" aria-haspopup="true">
-                <a href="{{ link.url }}" class="site-nav__link">
+                <a href="{{ link.url }}" class="site-nav__link site-nav__link--dropdown">
                   {{ link.title }}
                 </a>
                 <ul class="nav__dropdown">

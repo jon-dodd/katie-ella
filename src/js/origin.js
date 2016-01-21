@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$('.nav__items').toggleClass('nav__items--show');
 	});
 	if ($('html').hasClass('touchevents')) {
-		$('.nav__parent>a').one( "click", function(event) {
+		$('.site-nav__link--dropdown').one( "click", function(event) {
 			event.preventDefault();
 		});
 	}
