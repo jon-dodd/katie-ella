@@ -485,7 +485,8 @@ p,
 }
 
 @media all and (min-width: 480px) {
-  .paragraph--lede, .about p {
+  .paragraph--lede, .about p,
+  .article__content p:first-child {
     font-size: 20px;
     line-height: 1.8em;
   }
@@ -2298,6 +2299,7 @@ input[type="submit"] {
   text-decoration: none;
   background: #67a29e;
   color: #FFFFFF;
+  border-radius: 4px;
   transition: background 0.2s ease-in-out;
 }
 .button:hover, .button:focus,
@@ -2368,7 +2370,7 @@ input[type="submit"].button--larger {
 button.button--pill,
 input[type="button"].button--pill,
 input[type="submit"].button--pill {
-  padding: 15px;
+  padding: 10px 30px;
   font-size: 14px;
 }
 .button.button--active,
@@ -2655,6 +2657,7 @@ textarea {
   padding: 15px;
   border: 2px solid #f2f2f2;
   width: 100%;
+  -webkit-appearance: none;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -2708,6 +2711,7 @@ select:focus {
 input[type="button"],
 input[type="submit"] {
   border: 0px;
+  -webkit-appearance: none;
 }
 
 input::-webkit-outer-spin-button,
@@ -2769,6 +2773,13 @@ embed {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.article__image {
+  float: right;
+  width: 50%;
+  max-width: 200px;
+  margin: 0 0 30px 30px;
 }
 
 .notice {

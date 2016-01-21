@@ -33,6 +33,7 @@
 		padding: $spacing/2;
 		border: 2px solid $colour-grey;
 		width: 100%;
+		-webkit-appearance: none;
 
 		&:focus {
 			outline: none;
@@ -68,13 +69,14 @@
 		-webkit-appearance: menulist-button;
 
 		&:focus {
-			outline: none; 
+			outline: none;
 		}
 	}
 
 	input[type="button"],
 	input[type="submit"] {
 		border: 0px;
+		-webkit-appearance: none;
 	}
 
 
