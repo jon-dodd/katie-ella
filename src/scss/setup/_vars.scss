@@ -4,23 +4,23 @@
 
 	//
 	// Define all your global variables here. Remember to comment all relevant information e.g. "Only to be used for tranactional messages".
-	// 
+	//
 
 	// Brand colours
-	$colour-teal: #67a29e; 
-	$colour-blue: #1e2e55; 
+	$colour-teal: #67a29e;
+	$colour-blue: #1e2e55;
 	$colour-orange: #ea6e25;
-
-	// Heirarchy colours
-	$colour-primary: $colour-teal;
-	$colour-secondary: $colour-blue; 
-	$colour-special: $colour-orange;
 
 	// Base colours
 	$colour-black: #272727;
 	$colour-white: #FFFFFF;
 	$colour-grey: #f2f2f2;
-		
+
+	// Heirarchy colours
+	$colour-primary: $colour-teal;
+	$colour-secondary: $colour-black;
+	$colour-special: $colour-orange;
+
 	// Interaction colours
 	$colour-link: $colour-primary;
 	$colour-failure: #ae3d3f;
@@ -30,7 +30,7 @@
 	// Layout
 	$page-width: 1200px;
 	$grid-gutter-width: 30px !default;
-	$spacing: $grid-gutter-width; 
+	$spacing: $grid-gutter-width;
 
 	// Breakpoints
 
@@ -67,8 +67,8 @@
 	$screen-xs-max:              ($screen-sm-min - 1) !default;
 	$screen-sm-max:              ($screen-md-min - 1) !default;
 	$screen-md-max:              ($screen-lg-min - 1) !default;
-	
-	$palm-start: $screen-xs; 
+
+	$palm-start: $screen-xs;
 	$lap-start:  $screen-sm;
 	$desk-start: $screen-md;
 	$large-start: $screen-lg;
@@ -83,10 +83,10 @@
 	$zindex-high: 10;
 	$zindex-mid: 5;
 	$zindex-low: 2;
-	
+
 	// Misc
-	$border-radius: 4px; 
-	$border-weight: 2px; 
+	$border-radius: 4px;
+	$border-weight: 2px;
 	$box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 
 

@@ -3,7 +3,7 @@
 //==========================================================================
 
 .hidden {
-	display: none; 
+	display: none;
 }
 
 .visuallyhidden {
@@ -13,25 +13,31 @@
 	left: -1000000px;
 	width: 0px;
 	height: 0px;
-	display: block; 
+	display: block;
 }
 
 .not-palm {
-	display: none; 
-	
+	display: none;
+
 	@media all and (min-width: $lap-start) {
 		display: block;
-		
+
 		span & {
-			display: inline; 
-		} 
+			display: inline;
+		}
+	}
+}
+
+.palm {
+	@media all and (min-width: $lap-start) {
+		display: none; 
 	}
 }
 
 .not-lap {
-	display: none; 
-	
+	display: none;
+
 	@media all and (min-width: $desk-start) {
-		display: block; 
+		display: block;
 	}
 }

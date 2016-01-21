@@ -629,9 +629,6 @@ h6,
     margin: 0 0 30px 0;
   }
 }
-.page-title span {
-  border-bottom: 1px solid #f2f2f2;
-}
 
 ul,
 ol {
@@ -2281,6 +2278,12 @@ a:hover .share-count:after {
   }
 }
 
+@media all and (min-width: 768px) {
+  .palm {
+    display: none;
+  }
+}
+
 .not-lap {
   display: none;
 }
@@ -2316,7 +2319,7 @@ input[type="submit"]:focus {
 button.button--secondary,
 input[type="button"].button--secondary,
 input[type="submit"].button--secondary {
-  background: #1e2e55;
+  background: #272727;
 }
 .button.button--secondary:hover, .button.button--secondary:focus,
 button.button--secondary:hover,
@@ -2325,7 +2328,7 @@ input[type="button"].button--secondary:hover,
 input[type="button"].button--secondary:focus,
 input[type="submit"].button--secondary:hover,
 input[type="submit"].button--secondary:focus {
-  background: #111a2f;
+  background: #0e0e0e;
 }
 .button.button--special,
 button.button--special,
@@ -2724,6 +2727,12 @@ input::-webkit-inner-spin-button {
   max-width: 100px;
 }
 
+.form__input--central {
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+
 a {
   color: #67a29e;
   text-decoration: underline;
@@ -2734,7 +2743,7 @@ a {
   transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: #1e2e55;
+  color: #272727;
 }
 a:focus {
   outline: none;
@@ -2809,22 +2818,14 @@ caption {
 
 th,
 td {
-  padding: 30px 30px 30px 0;
+  padding: 15px;
   border-bottom: 1px solid #f2f2f2;
   text-align: left;
   vertical-align: top;
 }
-th:last-child,
-td:last-child {
-  padding: 30px 0;
-}
 
 th {
   font-weight: bold;
-}
-
-thead tr:last-child th {
-  border-bottom: 2px solid #f2f2f2;
 }
 
 [colspan] {
@@ -2958,33 +2959,6 @@ form .form__question,
   padding: 0;
   margin-bottom: 30px;
   position: relative;
-}
-@media all and (max-width: 600px) {
-  form thead,
-  .form thead {
-    display: none;
-  }
-  form tr,
-  .form tr {
-    border-bottom: 1px solid #f2f2f2;
-  }
-  form td,
-  .form td {
-    display: block;
-    width: 100%;
-    margin: 0;
-    border-bottom: none;
-  }
-  form td label,
-  .form td label {
-    visibility: visible !important;
-    width: auto;
-    height: auto;
-    font-size: 16px;
-    position: relative;
-    top: auto;
-    left: auto;
-  }
 }
 
 fieldset {
@@ -3246,7 +3220,7 @@ fieldset + fieldset {
 
 .nav__toggle {
   display: block;
-  padding: 11px;
+  padding: 11px 0 11px 30px;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
@@ -3259,7 +3233,7 @@ fieldset + fieldset {
   background: #272727;
   opacity: 1;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -40px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -moz-transform: rotate(0deg);

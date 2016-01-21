@@ -93,3 +93,9 @@ input::-webkit-inner-spin-button {
 .form__input--short-number {
 	max-width: 100px;
 }
+
+.form__input--central {
+	margin: 0 auto;
+	float: none;
+	display: block; 
+}

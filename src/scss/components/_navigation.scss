@@ -122,7 +122,7 @@ $mobile-nav: $lap-start;
 
 .nav__toggle {
 	display: block;
-	padding: 11px;
+	padding: 11px 0 11px $spacing;
 	text-align: center;
 	border-top: 1px solid $colour-grey;
 	border-bottom: 1px solid $colour-grey;
@@ -135,7 +135,7 @@ $mobile-nav: $lap-start;
 		background: $colour-black;
 		opacity: 1;
 		left: 50%;
-		margin-left: -60px;
+		margin-left: -40px;
 		@include prefix(transform, rotate(0deg));
 		@include prefix(transition, all $animation-time ease-in-out);
 
@@ -214,7 +214,7 @@ $mobile-nav: $lap-start;
 
 		a {
 			text-decoration: none;
-			margin-right: $spacing/2; 
+			margin-right: $spacing/2;
 
 			&:before {
 				content: "N";
