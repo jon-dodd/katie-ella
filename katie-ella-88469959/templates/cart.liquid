@@ -37,11 +37,11 @@
         <tr>
             <td>
                 <a href="{{ item.url }}" class="product flush--bottom">
-                    <img src="{{ item | img_url: 'small' }}" alt="{{ item.title | escape }}">
-                  <h3 class="product__title">{{ item.product.title }}</h3>
-                  {% unless item.variant.title contains 'Default' %}
-                  <p class="paragraph--small">{{ item.variant.title }}</p>
-                  {% endunless %}
+                    <img class="basket__image" src="{{ item | img_url: 'small' }}" alt="{{ item.title | escape }}">
+                    <h3 class="product__title">{{ item.product.title }}</h3>
+                    {% unless item.variant.title contains 'Default' %}
+                    <p class="paragraph--small">{{ item.variant.title }}</p>
+                    {% endunless %}
 
 
                 {% if item.properties.size > 0 %}
@@ -87,7 +87,7 @@
                   {% endfor %}
                 {% endif %}
             </td>
-            <td class="not-palm">
+            <td class="not-palm align--centre">
                 <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="button button--secondary button--pill">
                   {{ 'cart.general.remove' | t }}
                 </a>

@@ -30,5 +30,12 @@
 		float: right;
 		width: 50%;
 		max-width: 200px;
-		margin: 0 0 $spacing $spacing; 
+		margin: 0 0 $spacing $spacing;
+	}
+
+	.basket__image {
+		@media all and (min-width: $lap-start) {
+			float:left;
+			margin-right: $spacing/2;
+		}
 	}

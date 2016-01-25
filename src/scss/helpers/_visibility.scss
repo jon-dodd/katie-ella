@@ -17,20 +17,14 @@
 }
 
 .not-palm {
-	display: none;
-
-	@media all and (min-width: $lap-start) {
-		display: block;
-
-		span & {
-			display: inline;
-		}
+	@media all and (max-width: $lap-start) {
+		display: none;
 	}
 }
 
 .palm {
 	@media all and (min-width: $lap-start) {
-		display: none; 
+		display: none;
 	}
 }
 

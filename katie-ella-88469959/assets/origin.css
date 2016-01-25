@@ -2266,15 +2266,9 @@ a:hover .share-count:after {
   display: block;
 }
 
-.not-palm {
-  display: none;
-}
-@media all and (min-width: 768px) {
+@media all and (max-width: 768px) {
   .not-palm {
-    display: block;
-  }
-  span .not-palm {
-    display: inline;
+    display: none;
   }
 }
 
@@ -2789,6 +2783,13 @@ embed {
   width: 50%;
   max-width: 200px;
   margin: 0 0 30px 30px;
+}
+
+@media all and (min-width: 768px) {
+  .basket__image {
+    float: left;
+    margin-right: 15px;
+  }
 }
 
 .notice {
