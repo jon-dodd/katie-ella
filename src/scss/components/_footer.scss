@@ -24,6 +24,7 @@
             float: left;
             color: $colour-black;
 			border: none;
+			margin-bottom: $spacing/3; 
 
             @media all and (max-width: $palm-start) {
 	            width: 65%;
@@ -41,8 +42,13 @@
             }
         }
 
-        .mce_inline_error {
+		.mc-field-group {
+			position: relative;
+		}
+
+        div.mce_inline_error {
 	        position: absolute;
+			top: -34px;
         }
 
         p {

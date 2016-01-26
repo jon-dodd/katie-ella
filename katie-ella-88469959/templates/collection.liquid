@@ -6,12 +6,27 @@
 
 {% include 'breadcrumb' %}
 
-<h1 class="page-title">{{ collection.title }}</h1>
 
-{% if collection.description != blank %}
-  <div class="margin--top margin--bottom align--centre">
-    {{ collection.description }}
-  </div>
+
+{% if collection.image %}
+    <div class="page-title-hero">
+        <img src="{{ collection | img_url: 'master' }}"  alt="{{ collection.title | escape }}">
+        <div class="page-title-hero__copy">
+            <h1 class="page-title"><span>{{ collection.title }}</span></h1>
+            {% if collection.description != blank %}
+              <div class="collection-desc align--centre">
+                {{ collection.description }}
+              </div>
+            {% endif %}
+        </div>
+    </div>
+{% else %}
+    <h1 class="page-title"><span>{{ collection.title }}</span></h1>
+    {% if collection.description != blank %}
+      <div class="collection-desc margin--top margin--bottom align--centre">
+        {{ collection.description }}
+      </div>
+    {% endif %}
 {% endif %}
 
 {% case products_per_row %}

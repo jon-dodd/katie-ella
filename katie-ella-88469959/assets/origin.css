@@ -485,7 +485,7 @@ p,
 }
 
 @media all and (min-width: 480px) {
-  .paragraph--lede, .about p,
+  .paragraph--lede, .collection-desc, .about p,
   .article__content p:first-child {
     font-size: 20px;
     line-height: 1.8em;
@@ -627,6 +627,64 @@ h6,
 @media all and (min-width: 480px) {
   .page-title {
     margin: 0 0 30px 0;
+  }
+}
+.page-title span {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.page-title-hero {
+  position: relative;
+  background: #000000;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+@media all and (max-width: 480px) {
+  .page-title-hero {
+    margin-top: 15px;
+  }
+}
+.page-title-hero img {
+  opacity: .7;
+  display: block;
+}
+@media all and (max-width: 630px) {
+  .page-title-hero img {
+    height: 120px;
+    width: auto;
+    max-width: none;
+  }
+}
+.page-title-hero .page-title-hero__copy {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-shadow: 0px 0px 8px #000000;
+}
+.page-title-hero .page-title {
+  color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+@media all and (min-width: 768px) {
+  .page-title-hero .page-title {
+    font-size: 50px;
+  }
+}
+.page-title-hero .collection-desc {
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+@media all and (min-width: 768px) {
+  .page-title-hero .collection-desc {
+    margin-top: 30px;
   }
 }
 
@@ -2198,19 +2256,19 @@ a:hover .share-count:after {
 }
 
 .border--top {
-  border-top: 2px solid #f2f2f2 !important;
+  border-top: 1px solid #f2f2f2 !important;
 }
 
 .border--bottom {
-  border-bottom: 2px solid #f2f2f2 !important;
+  border-bottom: 1px solid #f2f2f2 !important;
 }
 
 .border--left {
-  border-left: 2px solid #f2f2f2 !important;
+  border-left: 1px solid #f2f2f2 !important;
 }
 
 .border--right {
-  border-right: 2px solid #f2f2f2 !important;
+  border-right: 1px solid #f2f2f2 !important;
 }
 
 .float--left {
@@ -2785,7 +2843,7 @@ embed {
   margin: 0 0 30px 30px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   .basket__image {
     float: left;
     margin-right: 15px;
@@ -2905,6 +2963,7 @@ th {
   float: left;
   color: #272727;
   border: none;
+  margin-bottom: 10px;
 }
 @media all and (max-width: 480px) {
   .footer__newsletter input[type='email'] {
@@ -2922,8 +2981,12 @@ th {
     width: 33%;
   }
 }
-.footer__newsletter .mce_inline_error {
+.footer__newsletter .mc-field-group {
+  position: relative;
+}
+.footer__newsletter div.mce_inline_error {
   position: absolute;
+  top: -34px;
 }
 .footer__newsletter p {
   display: block;
@@ -3346,6 +3409,47 @@ fieldset + fieldset {
   }
 }
 
+.news-item__image {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.news-item:hover .news-item__image {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.news-item__title {
+  margin-bottom: 20px !important;
+  position: relative;
+  top: -4px;
+}
+.news-item__title a {
+  text-decoration: none;
+  border-bottom: 2px solid #272727;
+  color: #272727;
+  -webkit-transition: border 0.2s ease-in-out;
+  -ms-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.news-item__title a:hover {
+  border-bottom-color: #67a29e;
+}
+.news-item__copy {
+  margin-bottom: 20px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -3363,6 +3467,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  dispaly: block;
+}
+.container--thin {
+  max-width: 850px;
 }
 
 .products__title {
@@ -3401,7 +3509,7 @@ body {
 }
 
 .product__title {
-  margin-bottom: 15px;
+  margin: 10px 0 15px 0;
   font-weight: 400;
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;

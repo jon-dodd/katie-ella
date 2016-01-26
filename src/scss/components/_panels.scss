@@ -8,7 +8,7 @@
 
 	body {
 		border: 5px solid $colour-grey;
-		
+
 		@media all and (min-width: $desk-start) {
 			border: 15px solid $colour-grey;
 		}
@@ -22,4 +22,9 @@
 			max-width: $page-width;
 	        margin: 0 auto;
 	        padding: 0 $spacing/2;
+			dispaly: block; 
+
+			&--thin {
+				max-width: 850px;
+			}
 		}

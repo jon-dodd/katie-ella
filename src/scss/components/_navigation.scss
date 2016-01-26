@@ -20,8 +20,8 @@ $mobile-nav: $lap-start;
 	.container {
 
 		> ul {
-        	border-top: 1px solid $colour-grey;
-    		border-bottom: 1px solid $colour-grey;
+        	border-top: $border-weight solid $colour-grey;
+    		border-bottom: $border-weight solid $colour-grey;
     		width: 100%;
     	}
 	}

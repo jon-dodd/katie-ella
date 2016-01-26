@@ -8,8 +8,8 @@
 
 {% comment %}{% include 'breadcrumb' %}{% endcomment %}
 
-<h1 class="page-title margin--top">{{ article.title }}</h1>
-
+<div class="container container--thin">
+    <h1 class="page-title margin--top"><span>{{ article.title }}</span></h1>
         <p class="paragraph--small align--centre weight--bold">
           <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'month_day_year' }}</time>
           {% comment %}
@@ -141,6 +141,7 @@
       </div>
     </div>
   </article>
+</div>
 </div>
 
 {% endpaginate %}

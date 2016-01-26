@@ -36,7 +36,7 @@
         {% comment %}
           <h3 itemprop="brand">{{ product.vendor }}</h3>
         {% endcomment %}
-        <h1 class="product-single__title page-title">{{ product.title }}</h1>
+        <h1 class="product-single__title page-title"><span>{{ product.title }}</span></h1>
 
         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           {% assign variant = product.selected_or_first_available_variant %}

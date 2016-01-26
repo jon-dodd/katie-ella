@@ -34,7 +34,7 @@
 	}
 
 	.basket__image {
-		@media all and (min-width: $lap-start) {
+		@media all and (min-width: $desk-start) {
 			float:left;
 			margin-right: $spacing/2;
 		}
