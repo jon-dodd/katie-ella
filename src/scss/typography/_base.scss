@@ -7,21 +7,21 @@
     //
 
     // Stacks
-    $font-primary:  "europa",sans-serif; 
+    $font-primary:  "europa",sans-serif;
     $font-special: "europa",sans-serif;
 
     // Weights
     $weight-black: 400;
     $weight-bold: 400;
-    $weight-normal: 300; 
-    $weight-light: 100; 
+    $weight-normal: 300;
+    $weight-light: 100;
 
     // Base
     $size-base: 16px;
     $size-larger: 20px;
     $size-largest: 24px;
-    $size-smaller: 14px; 
-    $line-height-looser: 1.8em; 
+    $size-smaller: 14px;
+    $line-height-looser: 1.7em; 
     $line-height-base: 1.5em;
     $line-height-tighter: 1.1em;
 
@@ -36,7 +36,7 @@
 
     // Defining your typography source.
 
-    $font-filename: file-name; 
+    $font-filename: file-name;
 
     @font-face {
         font-family: '$font-filename';
@@ -51,7 +51,7 @@
 
     // Sets the global style for the site.
     body {
-    	font-family: $font-primary; 
+    	font-family: $font-primary;
     	font-size: $size-base;
-    	line-height: $line-height-base; 
+    	line-height: $line-height-base;
     }

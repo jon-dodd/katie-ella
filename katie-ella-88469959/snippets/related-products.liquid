@@ -12,11 +12,8 @@
 {% endif %}
 
 {% if collection and collection.products_count > 1 %}
-  <hr class="hr--clear hr--small">
-  <div class="section-header section-header--medium">
-    <h4 class="section-header__title">{{ 'products.general.related_products_title' | t }}</h4>
-  </div>
-  <div class="grid-uniform grid-link__container">
+    <h3 class="h2 align--centre products__title margin--top padding--top">{{ 'products.general.related_products_title' | t }}</h3>
+  <div class="row">
     {% assign current_product = product %}
     {% assign current_product_found = false %}
     {% for product in collection.products limit: number_of_products_to_fetch %}

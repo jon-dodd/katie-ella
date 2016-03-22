@@ -9,6 +9,9 @@
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a class="callouts__block margin--bottom" href="{{ settings[slide_link] }}">
                     {{ slide_img | asset_url | img_tag: settings[slide_alt] }}
+                    {% unless settings[slide_alt] == blank %}
+                        <span class="button">{{ settings[slide_alt] }}</span>
+                    {% endunless %}
                 </a>
             </div>
           {% endif %}

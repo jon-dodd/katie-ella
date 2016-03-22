@@ -4,7 +4,7 @@
 
 .footer {
 	background: $colour-grey;
-	padding: 0 $spacing/4 $spacing/4 $spacing/4 ;
+	padding: $spacing $spacing/4 $spacing/4 $spacing/4;
 
 	a {
 
@@ -15,7 +15,7 @@
 }
 
     .footer__newsletter {
-        padding: $spacing/2 0;
+        padding: 0 0 $spacing/2 0;
         margin-bottom: $spacing;
         border-bottom: 1px solid darken($colour-grey,10%);
 
@@ -24,7 +24,7 @@
             float: left;
             color: $colour-black;
 			border: none;
-			margin-bottom: $spacing/3; 
+			margin-bottom: $spacing/3;
 
             @media all and (max-width: $palm-start) {
 	            width: 65%;

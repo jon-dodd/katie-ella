@@ -30,7 +30,7 @@
           <span class="badge__text{% if sold_out_text.size > 9 %} badge__text--small{% endif %}">{{ 'products.product.sold_out' | t }}</span>
         </span>
       {% endif %}
-    <img class="product__thumb" src="{{ product.featured_image.src | img_url: 'grande' }}" alt="{{ product.featured_image.alt | escape }}">
+    <img class="product__thumb" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
     </span>
     <h3 class="product__title">{{ product.title }}</h3>
     {% comment %}
