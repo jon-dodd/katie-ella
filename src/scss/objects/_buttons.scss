@@ -61,8 +61,8 @@
 
 		// Sizing
 		&.button--larger {
-			padding: $spacing*2;
-			font-size: $size-larger;
+			padding: $spacing/1.5 $spacing*1.5;
+			font-size: $size-largest;
 		}
 
 		&.button--pill {

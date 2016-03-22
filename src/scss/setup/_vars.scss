@@ -8,14 +8,17 @@
 
 	// Brand colours
 	$colour-teal: #67a29e;
+	$colour-teal--opaque: rgba(103, 162, 158, 0.8);
 	$colour-blue: #1e2e55;
 	$colour-orange: #ea6e25;
 
 	// Base colours
 	$colour-black: #272727;
-	$colour-black--rich: #000000; 
+	$colour-black--rich: #000000;
+	$colour-black--opaque: rgba(0,0,0,0.8);
 	$colour-white: #FFFFFF;
 	$colour-grey: #f2f2f2;
+	$colour-grey--opaque: rgba(242, 242, 242, 0.8);
 
 	// Heirarchy colours
 	$colour-primary: $colour-teal;

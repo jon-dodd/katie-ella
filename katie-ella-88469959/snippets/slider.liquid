@@ -1,16 +1,40 @@
 <div class="callouts">
     <div class="row">
-        {% for i in (1..6) %}
+        {% for i in (1..1) %}
           {% capture slide %}slide_{{ i }}{% endcapture %}
           {% capture slide_link %}slide_{{ i }}_link{% endcapture %}
           {% capture slide_img %}slide_{{ i }}.jpg{% endcapture %}
+          {% capture slide_title %}slide_{{ i }}_title{% endcapture %}
+          {% capture slide_alt %}slide_{{ i }}_alt{% endcapture %}
+          {% if settings[slide] %}
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <a class="callouts__block callouts__block--main margin--bottom" href="{{ settings[slide_link] }}">
+                    {% unless settings[slide_title] == blank %}
+                        <span class="h1 callouts__block-title">{{ settings[slide_title] }}</span>
+                    {% endunless %}
+                    {{ slide_img | asset_url | img_tag: settings[slide_alt] }}
+                    {% unless settings[slide_alt] == blank %}
+                        <span class="button button--special callouts__block-button">{{ settings[slide_alt] }}</span>
+                    {% endunless %}
+                </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+        {% for i in (2..6) %}
+          {% capture slide %}slide_{{ i }}{% endcapture %}
+          {% capture slide_link %}slide_{{ i }}_link{% endcapture %}
+          {% capture slide_img %}slide_{{ i }}.jpg{% endcapture %}
+          {% capture slide_title %}slide_{{ i }}_title{% endcapture %}
           {% capture slide_alt %}slide_{{ i }}_alt{% endcapture %}
           {% if settings[slide] %}
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a class="callouts__block margin--bottom" href="{{ settings[slide_link] }}">
+                    {% unless settings[slide_title] == blank %}
+                        <span class="h3 callouts__block-title">{{ settings[slide_title] }}</span>
+                    {% endunless %}
                     {{ slide_img | asset_url | img_tag: settings[slide_alt] }}
                     {% unless settings[slide_alt] == blank %}
-                        <span class="button">{{ settings[slide_alt] }}</span>
+                        <span class="button callouts__block-button">{{ settings[slide_alt] }}</span>
                     {% endunless %}
                 </a>
             </div>

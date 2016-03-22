@@ -4,7 +4,8 @@
 
 .callouts__block {
 	display: block;
-	position: relative; 
+	position: relative;
+	text-decoration: none;
 	@include prefix(transform, scale(1));
     @include prefix(transition, transform $animation-time $easing);
 
@@ -12,9 +13,36 @@
 	    @include prefix(transform, scale(1.05));
     }
 
-	.button {
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	&-title {
+		margin: 0;
+		text-decoration: none;
+		display: block;
+		padding: $spacing;
+		background: $colour-grey;
+		color: $colour-black;
+
+		@media all and (min-width: $lap-start) {
+			background: $colour-grey--opaque;
+			left: 0;
+			right: 0;
+			position: absolute;
+			top: 0;
+
+			.callouts__block--main & {
+				font-family: $font-special;
+				color: $colour-blue;
+			}
+		}
+	}
+
+	&-button {
 		position: absolute;
-		bottom: $spacing;
-		right: $spacing;
+		bottom: $spacing/2;
+		right: $spacing/2;
 	}
 }

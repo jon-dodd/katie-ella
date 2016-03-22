@@ -204,12 +204,17 @@
         "id": "slide_1.jpg",
         "label": "Image",
         "max-width": 970,
-        "info": "570 x 510px recommended"
+        "info": "570 x 503px recommended"
       },
       {
         "type": "text",
         "id": "slide_1_link",
         "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "slide_1_title",
+        "label": "Text title (leave empty if no title needed)"
       },
       {
         "type": "text",
@@ -239,6 +244,11 @@
       },
       {
         "type": "text",
+        "id": "slide_2_title",
+        "label": "Text title (leave empty if no title needed)"
+      },
+      {
+        "type": "text",
         "id": "slide_2_alt",
         "label": "Button text (leave empty if no button needed)"
       },
@@ -262,6 +272,11 @@
         "type": "text",
         "id": "slide_3_link",
         "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "slide_3_title",
+        "label": "Text title (leave empty if no title needed)"
       },
       {
         "type": "text",
@@ -291,6 +306,11 @@
       },
       {
         "type": "text",
+        "id": "slide_4_title",
+        "label": "Text title (leave empty if no title needed)"
+      },
+      {
+        "type": "text",
         "id": "slide_4_alt",
         "label": "Button text (leave empty if no button needed)"
       },
@@ -314,6 +334,11 @@
         "type": "text",
         "id": "slide_5_link",
         "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "slide_5_title",
+        "label": "Text title (leave empty if no title needed)"
       },
       {
         "type": "text",

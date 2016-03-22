@@ -425,9 +425,9 @@ th {
 }
 
 @font-face {
-  font-family: '$font-filename';
-  src: url("$font-filename.eot");
-  src: url("$font-filename.eot?#iefix") format("embedded-opentype"), url("$font-filename.woff") format("woff"), url("$font-filename.ttf") format("truetype"), url("$font-filename.svg#$font-filename") format("svg");
+  font-family: 'salamander_scriptregular';
+  src: url("salamanderscript-webfont.eot");
+  src: url("salamanderscript-webfont.eot?#iefix") format("embedded-opentype"), url("salamanderscript-webfont.woff2") format("woff2"), url("salamanderscript-webfont.woff") format("woff"), url("salamanderscript-webfont.ttf") format("truetype"), url("salamanderscript-webfont.svg#salamander_scriptregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -574,6 +574,7 @@ h3,
 .h3 {
   font-size: 18.46154px;
   margin: 0 0 45px 0;
+  font-weight: 400;
 }
 @media all and (min-width: 480px) {
   h3,
@@ -615,6 +616,11 @@ h6,
 .heading--spaced {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.heading--special {
+  font-family: "salamander_scriptregular", serif;
+  font-size: 120%;
 }
 
 .heading--block {
@@ -2417,8 +2423,8 @@ input[type="submit"].button--muted:focus {
 button.button--larger,
 input[type="button"].button--larger,
 input[type="submit"].button--larger {
-  padding: 60px;
-  font-size: 20px;
+  padding: 20px 45px;
+  font-size: 24px;
 }
 .button.button--pill,
 button.button--pill,
@@ -3598,6 +3604,7 @@ body {
 .callouts__block {
   display: block;
   position: relative;
+  text-decoration: none;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -moz-transform: scale(1);
@@ -3616,10 +3623,35 @@ body {
   -o-transform: scale(1.05);
   transform: scale(1.05);
 }
-.callouts__block .button {
+.callouts__block img {
+  display: block;
+  width: 100%;
+}
+.callouts__block-title {
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  padding: 30px;
+  background: #f2f2f2;
+  color: #272727;
+}
+@media all and (min-width: 768px) {
+  .callouts__block-title {
+    background: rgba(242, 242, 242, 0.8);
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .callouts__block--main .callouts__block-title {
+    font-family: "salamander_scriptregular", serif;
+    color: #1e2e55;
+  }
+}
+.callouts__block-button {
   position: absolute;
-  bottom: 30px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
 }
 
 /*# sourceMappingURL=origin.css.map */
