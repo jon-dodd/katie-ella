@@ -632,7 +632,12 @@ h6,
   text-align: center;
 }
 .template-collection .page-title {
-  margin: 0;
+  margin: 30px 0 0 0;
+}
+@media all and (min-width: 480px) {
+  .template-collection .page-title {
+    margin: 0;
+  }
 }
 .page-title span {
   border-bottom: 1px solid #f2f2f2;
@@ -2764,6 +2769,9 @@ select {
   background: #FFFFFF;
   -webkit-appearance: menulist-button;
 }
+.supports-touch select {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC") no-repeat scroll 95% center #FFFFFF;
+}
 select:focus {
   outline: none;
 }
@@ -3177,9 +3185,13 @@ fieldset + fieldset {
   transition: all 0.2s ease-in-out;
 }
 .nav .container > ul {
-  border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   width: 100%;
+}
+@media all and (min-width: 768px) {
+  .nav .container > ul {
+    border-top: 1px solid #f2f2f2;
+  }
 }
 
 .nav__parent {

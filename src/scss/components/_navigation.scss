@@ -20,9 +20,13 @@ $mobile-nav: $lap-start;
 	.container {
 
 		> ul {
-        	border-top: $border-weight solid $colour-grey;
+
     		border-bottom: $border-weight solid $colour-grey;
     		width: 100%;
+
+			@media all and (min-width: $mobile-nav) {
+				border-top: $border-weight solid $colour-grey;
+			}
     	}
 	}
 }

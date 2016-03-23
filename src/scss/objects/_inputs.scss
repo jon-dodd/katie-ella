@@ -68,6 +68,10 @@
 		background: $colour-white;
 		-webkit-appearance: menulist-button;
 
+		.supports-touch & {
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC") no-repeat scroll 95% center $colour-white;
+		}
+
 		&:focus {
 			outline: none;
 		}
@@ -97,5 +101,5 @@ input::-webkit-inner-spin-button {
 .form__input--central {
 	margin: 0 auto;
 	float: none;
-	display: block; 
+	display: block;
 }
