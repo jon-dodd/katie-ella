@@ -3,15 +3,27 @@
 //==========================================================================
 
 	.notice {
-		padding: $spacing;
-		background: $colour-alert; 
-		font-size: $size-larger; 
+		padding: $spacing/2;
+		background: $colour-teal;
+		font-size: $size-larger;
+		color: $colour-white;
+		margin-bottom: $spacing/2;
+
+		p {
+			margin: 0;
+			font-size: $size-base;
+			text-align: center;
+		}
+
+		a {
+			color: $colour-white;
+		}
 	}
 
 	.notice--error {
-		background: $colour-failure; 
+		background: $colour-failure;
 	}
 
 	.notice--success {
-		background: $colour-success; 
+		background: $colour-success;
 	}

@@ -54,9 +54,9 @@ $shareCountBg: #fff;
 $shareBorderColor: #ececec;
 
 .social-sharing {
- 
- clear: both; 
- margin-top: $spacing; 
+
+ clear: both;
+ margin-top: $spacing;
 
   * {
     -webkit-box-sizing:border-box;
@@ -92,6 +92,8 @@ $shareBorderColor: #ececec;
 
     &:before {
       line-height: $shareButtonHeight;
+      top: 0;
+      margin: 0;
     }
   }
 

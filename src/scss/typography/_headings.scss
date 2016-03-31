@@ -110,7 +110,8 @@
 		margin: 0 0 $spacing 0;
 		text-align: center;
 
-		.template-collection & {
+		.template-collection &,
+		#fabric-collections & {
 			margin: $spacing 0 0 0;
 
 			@media all and (min-width: $palm-start) {

@@ -56,9 +56,20 @@
 
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 
-    <!-- {% include 'header-bar' %} -->
-
     <div class="wrapper">
+
+        {% unless settings.global-text == blank %}
+        <div class="notice">
+            <div class="container">
+                <p>
+                    {{settings.global-text }}
+                    {% unless settings.global-linktext == blank %}
+                        <a href="{{ settings.global-link }}">{{ settings.global-linktext }}</a>
+                    {% endunless %}
+                </p>
+            </div>
+        </div>
+        {% endunless %}
 
         <header class="header">
             <div class="container align--centre">

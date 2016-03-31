@@ -1,3 +1,18 @@
 //==========================================================================
 //   MODALS
 //==========================================================================
+
+.spr-container {
+    padding: $spacing 0 !important;
+    border: 0 !important;
+    border-top: 1px solid $colour-grey !important;
+    border-bottom: 1px solid $colour-grey !important;
+}
+
+.spr-icon-star {
+    color: $colour-orange;
+}
+
+.spr-button {
+    margin: 0; 
+}

@@ -9,12 +9,12 @@
       },
       {
         "type": "paragraph",
-        "content": "This theme is fully supported by Shopify. For support and customizations, contact [theme-support@shopify.com](mailto:theme-support@shopify.com?subject=[Launchpad]+Theme+Support)."
+        "content": "This theme is fully supported by Jon Dodd. For support and customizations, contact [jon@dodd.xyz](mailto:jon@dodd.xyz)."
       }
     ]
     },
   {
-    "name": "Favicon",
+    "name": "Header",
     "settings": [
       {
         "type": "header",
@@ -32,6 +32,30 @@
         "max-height": 16,
         "label": "Custom icon",
         "info": "16 x 16px .png required"
+      },
+      {
+        "type": "header",
+        "content": "Global notices"
+      },
+      {
+        "type": "checkbox",
+        "id": "global-enable",
+        "label": "Enable"
+      },
+      {
+        "type": "textarea",
+        "id": "global-text",
+        "label": "Notice message"
+      },
+      {
+        "type": "text",
+        "id": "global-link",
+        "label": "Notice link"
+      },
+      {
+        "type": "text",
+        "id": "global-linktext",
+        "label": "Notice link text"
       }
     ]
   },
