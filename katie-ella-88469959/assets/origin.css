@@ -3230,12 +3230,15 @@ fieldset + fieldset {
   transition: all 0.2s ease-in-out;
 }
 .nav .container > ul {
-  border-bottom: 1px solid #f2f2f2;
   width: 100%;
+}
+.nav .container > ul.nav__items--show {
+  border-bottom: 1px solid #f2f2f2;
 }
 @media all and (min-width: 768px) {
   .nav .container > ul {
     border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
   }
 }
 
@@ -3274,8 +3277,43 @@ fieldset + fieldset {
 .nav__parent > a:hover {
   color: #67a29e;
 }
+.nav__items--show .nav__parent {
+  transition: opacity 0.15s ease-in-out 0.15s, transform 0.15s ease-in-out 0.15s;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+.nav__items--show .nav__parent:nth-child(1) {
+  transition-delay: 0.075s;
+}
+.nav__items--show .nav__parent:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.nav__items--show .nav__parent:nth-child(3) {
+  transition-delay: 0.225s;
+}
+.nav__items--show .nav__parent:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.nav__items--show .nav__parent:nth-child(5) {
+  transition-delay: 0.375s;
+}
+.nav__items--show .nav__parent:nth-child(6) {
+  transition-delay: 0.45s;
+}
+.nav__items--show .nav__parent:nth-child(7) {
+  transition-delay: 0.525s;
+}
+.nav__items--show .nav__parent:nth-child(8) {
+  transition-delay: 0.6s;
+}
+.nav__items--show .nav__parent:nth-child(9) {
+  transition-delay: 0.675s;
+}
+.nav__items--show .nav__parent:nth-child(10) {
+  transition-delay: 0.75s;
+}
 
-.nav__paren--standout > a {
+.nav__parent--standout > a {
   color: #ea6e25;
 }
 
@@ -3300,7 +3338,6 @@ fieldset + fieldset {
 }
 .nav__dropdown:after {
   bottom: 100%;
-  left: 30px;
   border: solid transparent;
   content: " ";
   height: 0;
@@ -3311,10 +3348,11 @@ fieldset + fieldset {
   border-bottom-color: #f2f2f2;
   border-width: 10px;
   margin-left: -10px;
+  left: 50%;
 }
-@media all and (max-width: 768px) {
+@media all and (min-width: 768px) {
   .nav__dropdown:after {
-    left: 50%;
+    left: 30px;
   }
 }
 .nav__parent:hover .nav__dropdown {
@@ -3410,25 +3448,40 @@ fieldset + fieldset {
 }
 
 .nav__items {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 0;
 }
-@media all and (max-width: 768px) {
-  .nav__items.nav__items--show {
-    display: block;
-  }
-  .nav__items .nav__parent {
-    width: 100%;
-    margin: 0;
-  }
-  .nav__items .nav__dropdown {
-    position: relative;
-    width: 100%;
-    text-align: center;
-  }
+.nav__items.nav__items--show {
+  height: auto;
+  overflow: visible;
+}
+.nav__items .nav__parent {
+  width: 100%;
+  margin: 0;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+.nav__items .nav__dropdown {
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 @media all and (min-width: 768px) {
   .nav__items {
-    display: block;
+    height: auto;
+    overflow: visible;
+  }
+  .nav__items .nav__parent {
+    width: auto;
+    margin: inherit;
+    opacity: 1;
+    transform: none;
+  }
+  .nav__items .nav__dropdown {
+    position: absolute;
+    width: 300px;
+    text-align: left;
   }
 }
 
@@ -3727,6 +3780,7 @@ body {
   -moz-transition: transform 0.2s ease-in-out;
   -o-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
+  min-height: 90px;
 }
 .callouts__block:hover {
   -webkit-transform: scale(1.05);

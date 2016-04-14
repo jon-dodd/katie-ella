@@ -5,6 +5,19 @@
 // Vars
 
 $mobile-nav: $lap-start;
+$header-animation-time: 0.15s;
+
+@mixin nav-animation {
+    transition: opacity $header-animation-time ease-in-out $header-animation-time, transform $header-animation-time ease-in-out $header-animation-time;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+
+    @for $i from 1 through 10 {
+        &:nth-child( #{$i} ) {
+            transition-delay: $header-animation-time * ($i / 2);
+        }
+    }
+}
 
 
 .nav {
@@ -20,12 +33,15 @@ $mobile-nav: $lap-start;
 	.container {
 
 		> ul {
-
-    		border-bottom: $border-weight solid $colour-grey;
     		width: 100%;
+
+			&.nav__items--show {
+				border-bottom: $border-weight solid $colour-grey;
+			}
 
 			@media all and (min-width: $mobile-nav) {
 				border-top: $border-weight solid $colour-grey;
+				border-bottom: $border-weight solid $colour-grey;
 			}
     	}
 	}
@@ -59,9 +75,13 @@ $mobile-nav: $lap-start;
 				color: $colour-teal;
 			}
 		}
+
+		.nav__items--show & {
+			@include nav-animation;
+		}
 	}
 
-		.nav__paren--standout {
+		.nav__parent--standout {
 			>a {
 				color: $colour-orange;
 			}
@@ -84,7 +104,6 @@ $mobile-nav: $lap-start;
 
 			&:after {
 				bottom: 100%;
-				left: 30px;
 				border: solid transparent;
 				content: " ";
 				height: 0;
@@ -95,9 +114,10 @@ $mobile-nav: $lap-start;
 				border-bottom-color: $colour-grey;
 				border-width: 10px;
 				margin-left: -10px;
+				left: 50%;
 
-				@media all and (max-width: $mobile-nav) {
-					left: 50%;
+				@media all and (min-width: $mobile-nav) {
+					left: 30px;
 				}
 			}
 
@@ -184,28 +204,45 @@ $mobile-nav: $lap-start;
 }
 
 .nav__items {
-	display: none;
+	height: 0;
+	overflow: hidden;
+	border-bottom: 0;
 
+	&.nav__items--show {
+		height: auto;
+		overflow: visible;
+	}
 
-	@media all and (max-width: $mobile-nav) {
-		&.nav__items--show {
-			display: block;
-		}
+	.nav__parent {
+		width: 100%;
+		margin: 0;
+		transform: translateY(-10px);
+		opacity: 0;
+	}
 
-		.nav__parent {
-			width: 100%;
-			margin: 0;
-		}
-
-		.nav__dropdown {
-			position: relative;
-			width: 100%;
-			text-align: center;
-		}
+	.nav__dropdown {
+		position: relative;
+		width: 100%;
+		text-align: center;
 	}
 
 	@media all and (min-width: $mobile-nav) {
-		display: block;
+
+	height: auto;
+	overflow: visible;
+
+		.nav__parent {
+			width: auto;
+			margin: inherit;
+			opacity: 1;
+			transform: none;
+		}
+
+		.nav__dropdown {
+			position: absolute;
+			width: 300px;
+			text-align: left;
+		}
 	}
 }
 

@@ -8,6 +8,7 @@
 	text-decoration: none;
 	@include prefix(transform, scale(1));
     @include prefix(transition, transform $animation-time $easing);
+	min-height: 90px;  
 
     &:hover {
 	    @include prefix(transform, scale(1.05));
