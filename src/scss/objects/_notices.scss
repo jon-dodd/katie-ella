@@ -2,12 +2,15 @@
 //   NOTICES
 //==========================================================================
 
-	.notice {
+	.notice,
+	.errors {
 		padding: $spacing/2;
 		background: $colour-teal;
 		font-size: $size-larger;
 		color: $colour-white;
 		margin-bottom: $spacing/2;
+		font-size: $size-base;
+		text-align: center;
 
 		p {
 			margin: 0;
@@ -20,8 +23,13 @@
 		}
 	}
 
-	.notice--error {
+	.notice--error,
+	.errors {
 		background: $colour-failure;
+
+		ul {
+			@extend .list--unstyled;
+		}
 	}
 
 	.notice--success {

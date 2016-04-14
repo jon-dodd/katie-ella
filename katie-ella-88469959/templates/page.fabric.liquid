@@ -1,14 +1,15 @@
 <div class="container">
+
     {% include 'breadcrumb' %}
+
     <h1 class="page-title"><span>{{ page.title }}</span></h1>
+
     <div class="padding--bottom">
         {{ page.content }}
 
         {% if settings.fabric-collection-1 %}
             <h3 class="align--centre margin--top">{{ settings.fabric-collection-1_title }}</h3>
-
             <div class="row margin--bottom">
-
                 {% for i in (1..6) %}
                     {% capture fabric %}fabric-{{ i }}{% endcapture %}
                     {% capture fabric_link %}fabric-{{ i }}_link{% endcapture %}
@@ -28,9 +29,7 @@
 
         {% if settings.fabric-collection-2 %}
             <h3 class="align--centre">{{ settings.fabric-collection-2_title }}</h3>
-
             <div class="row margin--bottom">
-
                 {% for i in (7..12) %}
                     {% capture fabric %}fabric-{{ i }}{% endcapture %}
                     {% capture fabric_link %}fabric-{{ i }}_link{% endcapture %}
@@ -50,9 +49,7 @@
 
         {% if settings.fabric-collection-3 %}
             <h3 class="align--centre">{{ settings.fabric-collection-3_title }}</h3>
-
             <div class="row margin--bottom">
-
                 {% for i in (13..18) %}
                     {% capture fabric %}fabric-{{ i }}{% endcapture %}
                     {% capture fabric_link %}fabric-{{ i }}_link{% endcapture %}

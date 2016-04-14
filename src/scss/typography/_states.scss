@@ -3,20 +3,29 @@
 //==========================================================================
 
     //
-    // The following are over rides to be used to over ride the state in question, and replace with tthe new rule. 
+    // The following are over rides to be used to over ride the state in question, and replace with tthe new rule.
     //
-    
+
     // Force alignments
     .align--centre {
         text-align: center !important;
     }
 
     .align--left {
-        text-align: left !important; 
+        text-align: left !important;
     }
 
     .align--right {
-        text-align: right !important; 
+        text-align: right !important;
+    }
+
+    // Colours
+    .text--teal {
+        color: $colour-teal;
+    }
+
+    .text--orange {
+        color: $colour-orange; 
     }
 
     // Force weights
@@ -47,7 +56,7 @@
     }
 
     .style--linethrough {
-    	text-decoration: line-through !important; 
+    	text-decoration: line-through !important;
     }
 
 

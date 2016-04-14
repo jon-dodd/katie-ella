@@ -38,6 +38,14 @@
 		}
 	}
 
+	.article__avatar {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		border: 2px solid $colour-grey;
+		display: inline-block;
+	}
+
 	.basket__image {
 		@media all and (min-width: $desk-start) {
 			float:left;

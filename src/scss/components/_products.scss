@@ -3,7 +3,8 @@
 //==========================================================================
 
 .template-collection,
-.template-index {
+.template-index,
+.template-search {
     .col-md-2 {
         @media all and (max-width: $lap-start) {
             &:nth-child(odd) {

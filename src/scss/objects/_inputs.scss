@@ -34,11 +34,12 @@
 		border: 2px solid $colour-grey;
 		width: 100%;
 		-webkit-appearance: none;
-		border-radius: 4px; 
+		border-radius: 4px;
 
 		&:focus {
 			outline: none;
 			background: $colour-white;
+			border-color: $colour-orange; 
 			transition: all $animation-time $easing;
 		}
 

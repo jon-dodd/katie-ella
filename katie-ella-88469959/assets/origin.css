@@ -355,15 +355,6 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
@@ -734,18 +725,23 @@ li {
   margin-bottom: 15px;
 }
 
-.list--unstyled {
+.list--unstyled, .notice--error ul,
+.errors ul {
   list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.list--unstyled ul,
-.list--unstyled ol {
+.list--unstyled ul, .notice--error ul ul,
+.errors ul ul,
+.list--unstyled ol,
+.notice--error ul ol,
+.errors ul ol {
   list-style-type: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.list--unstyled li {
+.list--unstyled li, .notice--error ul li,
+.errors ul li {
   line-height: 1.5em;
   margin: 0;
 }
@@ -769,6 +765,14 @@ li {
 
 .align--right {
   text-align: right !important;
+}
+
+.text--teal {
+  color: #67a29e;
+}
+
+.text--orange {
+  color: #ea6e25;
 }
 
 .weight--light {
@@ -2748,6 +2752,7 @@ input[type="search"]:focus,
 textarea:focus {
   outline: none;
   background: #FFFFFF;
+  border-color: #ea6e25;
   transition: all 0.2s ease-in-out;
 }
 @media all and (min-width: 480px) {
@@ -2876,6 +2881,14 @@ embed {
   }
 }
 
+.article__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #f2f2f2;
+  display: inline-block;
+}
+
 @media all and (min-width: 992px) {
   .basket__image {
     float: left;
@@ -2898,28 +2911,34 @@ embed {
   margin: 0;
 }
 
-.notice {
+.notice,
+.errors {
   padding: 15px;
   background: #67a29e;
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 15px;
+  font-size: 16px;
+  text-align: center;
 }
-.notice p {
+.notice p,
+.errors p {
   margin: 0;
   font-size: 16px;
   text-align: center;
 }
-.notice a {
+.notice a,
+.errors a {
   color: #FFFFFF;
 }
 
-.notice--error {
+.notice--error,
+.errors {
   background: #ae3d3f;
 }
 
 .notice--success {
-  background: #52954e;
+  background: #40773d;
 }
 
 table {
@@ -3622,23 +3641,27 @@ body {
 
 @media all and (max-width: 768px) {
   .template-collection .col-md-2:nth-child(odd),
-  .template-index .col-md-2:nth-child(odd) {
+  .template-index .col-md-2:nth-child(odd),
+  .template-search .col-md-2:nth-child(odd) {
     clear: left;
   }
 }
 @media all and (min-width: 768px) {
   .template-collection .col-md-2:nth-child(4n + 5),
-  .template-index .col-md-2:nth-child(4n + 5) {
+  .template-index .col-md-2:nth-child(4n + 5),
+  .template-search .col-md-2:nth-child(4n + 5) {
     clear: left;
   }
 }
 @media all and (min-width: 992px) {
   .template-collection .col-md-2:nth-child(4n + 5),
-  .template-index .col-md-2:nth-child(4n + 5) {
+  .template-index .col-md-2:nth-child(4n + 5),
+  .template-search .col-md-2:nth-child(4n + 5) {
     clear: none;
   }
   .template-collection .col-md-2:nth-child(6n + 7),
-  .template-index .col-md-2:nth-child(6n + 7) {
+  .template-index .col-md-2:nth-child(6n + 7),
+  .template-search .col-md-2:nth-child(6n + 7) {
     clear: left;
   }
 }
