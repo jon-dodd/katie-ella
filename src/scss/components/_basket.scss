@@ -3,6 +3,14 @@
 //==========================================================================
 
 .basket {
+    th, td {
+        padding: $spacing/3;
+
+        @media all and (min-width: $desk-start) {
+            padding: $spacing/2;
+        }
+    }
+
     td {
         @media all and (min-width: $desk-start) {
             vertical-align: middle !important;

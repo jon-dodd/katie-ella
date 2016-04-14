@@ -61,11 +61,20 @@
 
     .footer__title {
         margin-bottom: $spacing/2;
+
+		@media all and (max-width: $palm-start) {
+			text-align: center;
+		}
     }
 
 	.footer__links {
+
 		li {
 			margin-bottom: $spacing/2 !important;
+			
+			@media all and (max-width: $palm-start) {
+				text-align: center;
+			}
 		}
 	}
 

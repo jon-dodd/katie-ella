@@ -88,7 +88,7 @@
             <div class="container">
                 {% if settings.footer_newsletter_enable %}
                     <div class="footer__newsletter">
-                        <h3 class="footer__title align--centre padding--right">Sign up to our newsletter for news, discounts and offers</h3>
+                        <h3 class="footer__title align--centre">Sign up to our newsletter for news, discounts and offers</h3>
                         <!-- Begin MailChimp Signup Form -->
                         <div id="mc_embed_signup">
                           <form  class="box__signup fade-drop-in-5" action="//Katie-Ella.us10.list-manage.com/subscribe/post?u=ec6f23d8a9df0496d55043438&amp;id=e78dd44826" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -117,7 +117,7 @@
                 {% endif %}
 
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
                         <h3 class="footer__title">Useful links</h3>
                         <ul class="list--unstyled footer__links">
                         {% for link in linklists.footer.links %}
@@ -125,7 +125,7 @@
                         {% endfor %}
                         </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6">
+                    <div class="col-md-4 col-sm-4 not-palm">
                         <h3 class="footer__title">Contact us</h3>
                         {{settings.footer_contact_text }}
                     </div>

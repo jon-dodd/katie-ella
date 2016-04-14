@@ -528,7 +528,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 24.70588px;
+  font-size: 30px;
   margin: 0 0 45px 0;
   padding-bottom: 15px;
   line-height: 1.2;
@@ -550,7 +550,7 @@ h2,
 .h2,
 legend,
 .legend {
-  font-size: 18.82353px;
+  font-size: 22.85714px;
   margin: 0 0 45px 0;
 }
 @media all and (min-width: 480px) {
@@ -572,7 +572,7 @@ legend,
 
 h3,
 .h3 {
-  font-size: 18.46154px;
+  font-size: 20px;
   margin: 0 0 45px 0;
   font-weight: 400;
 }
@@ -2989,6 +2989,14 @@ th {
   }
 }
 
+.basket th, .basket td {
+  padding: 10px;
+}
+@media all and (min-width: 992px) {
+  .basket th, .basket td {
+    padding: 15px;
+  }
+}
 @media all and (min-width: 992px) {
   .basket td {
     vertical-align: middle !important;
@@ -3048,9 +3056,19 @@ th {
 .footer__title {
   margin-bottom: 15px;
 }
+@media all and (max-width: 480px) {
+  .footer__title {
+    text-align: center;
+  }
+}
 
 .footer__links li {
   margin-bottom: 15px !important;
+}
+@media all and (max-width: 480px) {
+  .footer__links li {
+    text-align: center;
+  }
 }
 
 .footer__smallprint {
