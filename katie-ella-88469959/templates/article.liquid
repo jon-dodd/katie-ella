@@ -25,11 +25,11 @@
         </p>
 
         {% if article.image %}
-            <a href="{{ article.url }}">
+
 
                 {% assign image_alt = article.title | escape %}
-                {{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image' | link_to: article.url }}
-            </a>
+                {{ article | img_url: '1024x1024' | img_tag: image_alt, 'article__image'}}
+
         {% endif %}
 
         <div class="article__content" class="rte" itemprop="articleBody">

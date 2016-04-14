@@ -20,7 +20,8 @@ $(document).ready(function(){
 
 		var toggle_id = $(this).attr('data-toggle');
 
-		$(this).toggleClass('toggle-element--active');
+		$('.toggle-element').removeClass('toggle-element--active');
+		$(this).addClass('toggle-element--active');
 		$('.product-main__image img').removeClass('toggle-element--open');
 		$("#"+toggle_id).toggleClass('toggle-element--open');
 		$('body').toggleClass(toggle_id+'--open');

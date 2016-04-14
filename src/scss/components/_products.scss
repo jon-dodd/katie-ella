@@ -2,7 +2,8 @@
 //   PRODUCTS
 //==========================================================================
 
-.template-collection {
+.template-collection,
+.template-index {
     .col-md-2 {
         @media all and (max-width: $lap-start) {
             &:nth-child(odd) {
@@ -10,12 +11,12 @@
             }
         }
         @media all and (min-width: $lap-start) {
-            &:nth-child(3n + 4) {
+            &:nth-child(4n + 5) {
                 clear: left;
             }
         }
         @media all and (min-width: $desk-start) {
-            &:nth-child(3n + 4) {
+            &:nth-child(4n + 5) {
                 clear: none;
             }
             &:nth-child(6n + 7) {
@@ -80,6 +81,7 @@
         overflow: hidden;
         visibility: hidden;
         display: block;
+        width: 100%;
         @include prefix(transform, translateY(-10px));
 
         &.toggle-element--open {
@@ -98,6 +100,24 @@
                 clear: left;
             }
         }
+    }
+}
+
+.product-main__thumb {
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-bottom: $spacing;
+    @include prefix(transform, scale(1));
+    @include prefix(transition, all $animation-time/2 $easing);
+
+    &.toggle-element--active {
+        @include prefix(transform, scale(1.1));
+    }
+
+    img {
+        width: 100%;
+        display: block;
     }
 }
 

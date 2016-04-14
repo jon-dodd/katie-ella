@@ -49,7 +49,11 @@ $mobile-nav: $lap-start;
 
 		>a {
 			display: block;
-			padding: $spacing/2;
+			padding: $spacing/2 $spacing/3;
+
+			@media all and (min-width: $desk-start) {
+				padding: $spacing/2;
+			}
 
 			&:hover {
 				color: $colour-teal;
@@ -242,6 +246,26 @@ $mobile-nav: $lap-start;
 				&:before {
 					content: "H";
 				}
+			}
+		}
+
+		span {
+			&:before {
+				content: "N";
+				font-family: "niche" !important;
+				position: relative;
+				top: 3px;
+				margin-right: $spacing/3;
+				font-style: normal !important;
+				font-weight: normal !important;
+				font-variant: normal !important;
+				text-transform: none !important;
+				speak: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-decoration: none;
+				color: $colour-black;
 			}
 		}
 	}

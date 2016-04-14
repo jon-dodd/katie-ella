@@ -59,7 +59,7 @@
     <div class="wrapper">
 
         {% unless settings.global-text == blank %}
-        <div class="notice">
+        <div id="announcement_popup" class="notice">
             <div class="container">
                 <p>
                     {{settings.global-text }}
@@ -140,7 +140,7 @@
 
                 </div>
 
-                <p class="align--centre paragraph--small footer__smallprint">All content &copy; Katie-Ella {{ 'now' | date: "%Y" }}. All rights reserved. Site by <a href="http://jon.dodd.xyz">Alloneword</a>, powered by <a href="http://www.shopify.com/website">Shopify</a>.</p>
+                <p class="align--centre paragraph--small footer__smallprint">All content &copy; Katie-Ella {{ 'now' | date: "%Y" }}. All rights reserved. Site by <a href="http://un.titled.co.uk">Un.titled</a>, powered by <a href="http://www.shopify.com/website">Shopify</a>.</p>
             </div>
         </footer>
 
@@ -150,7 +150,7 @@
       {% endif %}
 
       {{ 'jquery-1.11.3.min.js' | asset_url | script_tag }}
-      {{ 'social-button.js' | asset_url | script_tag }}
+      {{ 'cookie.js' | asset_url | script_tag }}
       {{ 'Origin.min.js' | asset_url | script_tag }}
 
       {% if template contains 'product' %}

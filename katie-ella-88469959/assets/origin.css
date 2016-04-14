@@ -655,7 +655,7 @@ h6,
   }
 }
 .page-title-hero img {
-  opacity: .7;
+  opacity: .8;
   display: block;
 }
 @media all and (max-width: 630px) {
@@ -675,7 +675,7 @@ h6,
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  text-shadow: 0px 0px 8px #000000;
+  text-shadow: 0px 0px 10px #000000;
 }
 .page-title-hero .page-title {
   color: #FFFFFF;
@@ -690,7 +690,18 @@ h6,
 }
 .page-title-hero .collection-desc {
   color: #FFFFFF;
-  margin-top: 15px;
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.page-title-hero .collection-desc p {
+  margin: 0;
+}
+@media all and (min-width: 480px) {
+  .page-title-hero .collection-desc {
+    font-size: 16px;
+    line-height: 1.7em;
+  }
 }
 @media all and (min-width: 768px) {
   .page-title-hero .collection-desc {
@@ -2725,6 +2736,7 @@ textarea {
   border: 2px solid #f2f2f2;
   width: 100%;
   -webkit-appearance: none;
+  border-radius: 4px;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -2852,10 +2864,16 @@ embed {
 }
 
 .article__image {
-  float: right;
-  width: 50%;
-  max-width: 200px;
-  margin: 0 0 30px 30px;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+@media all and (min-width: 480px) {
+  .article__image {
+    float: right;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 0 30px 30px;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -3246,7 +3264,12 @@ fieldset + fieldset {
 }
 .nav__parent > a {
   display: block;
-  padding: 15px;
+  padding: 15px 10px;
+}
+@media all and (min-width: 992px) {
+  .nav__parent > a {
+    padding: 15px;
+  }
 }
 .nav__parent > a:hover {
   color: #67a29e;
@@ -3443,6 +3466,23 @@ fieldset + fieldset {
   .breadcrumb a:first-child:before {
     content: "H";
   }
+  .breadcrumb span:before {
+    content: "N";
+    font-family: "niche" !important;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    color: #272727;
+  }
 }
 
 .news-item__image {
@@ -3510,20 +3550,24 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  .template-collection .col-md-2:nth-child(odd) {
+  .template-collection .col-md-2:nth-child(odd),
+  .template-index .col-md-2:nth-child(odd) {
     clear: left;
   }
 }
 @media all and (min-width: 768px) {
-  .template-collection .col-md-2:nth-child(3n + 4) {
+  .template-collection .col-md-2:nth-child(4n + 5),
+  .template-index .col-md-2:nth-child(4n + 5) {
     clear: left;
   }
 }
 @media all and (min-width: 992px) {
-  .template-collection .col-md-2:nth-child(3n + 4) {
+  .template-collection .col-md-2:nth-child(4n + 5),
+  .template-index .col-md-2:nth-child(4n + 5) {
     clear: none;
   }
-  .template-collection .col-md-2:nth-child(6n + 7) {
+  .template-collection .col-md-2:nth-child(6n + 7),
+  .template-index .col-md-2:nth-child(6n + 7) {
     clear: left;
   }
 }
@@ -3594,6 +3638,7 @@ body {
   overflow: hidden;
   visibility: hidden;
   display: block;
+  width: 100%;
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -3618,6 +3663,34 @@ body {
 }
 .product-main__image + .row .col-md-4:nth-child(3n + 4) {
   clear: left;
+}
+
+.product-main__thumb {
+  background-size: cover;
+  background-position: center;
+  display: block;
+  margin-bottom: 30px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.product-main__thumb.toggle-element--active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.product-main__thumb img {
+  width: 100%;
+  display: block;
 }
 
 .product-single__desc {

@@ -9,10 +9,10 @@
       },
       {
         "type": "paragraph",
-        "content": "This theme is fully supported by Jon Dodd. For support and customizations, contact [jon@dodd.xyz](mailto:jon@dodd.xyz)."
+        "content": "This theme is fully supported by Un,.titled. For support and customizations, contact [hello@un.titled.co.uk](mailto:hello@un.titled.co.uk)."
       }
     ]
-    },
+  },
   {
     "name": "Header",
     "settings": [
@@ -210,7 +210,7 @@
         "label": "Show heading"
       }
     ]
-},
+  },
   {
     "name": "Home page - callout blocks",
     "settings": [
@@ -385,10 +385,10 @@
         "label": "Show heading"
       }
     ]
-},
-{
-  "name": "First fabric collection",
-  "settings": [
+  },
+  {
+    "name": "First fabric collection",
+    "settings": [
       {
         "type": "checkbox",
         "id": "fabric-collection-1",
@@ -398,173 +398,168 @@
         "type": "text",
         "id": "fabric-collection-1_title",
         "label": "Fabric collection title"
-    },
-
-    {
-      "type": "header",
-      "content": "Fabric block 1"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-1",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-1.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-1_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-1_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 2"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-2",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-2.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-2_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-2_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 3"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-3",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-3.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-3_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-3_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 4"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-4",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-4.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-4_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-4_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 5"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-5",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-5.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-5_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-5_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 6"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-6",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-6.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-6_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-6_title",
-      "label": "Fabric title"
-    }
-  ]
-},
-
-
-
-
-{
-  "name": "Second fabric collection",
-  "settings": [
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-1",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-1.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-1_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-1_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-2",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-2.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-2_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-2_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-3",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-3.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-3_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-3_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-4",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-4.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-4_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-4_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-5",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-5.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-5_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-5_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-6",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-6.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-6_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-6_title",
+        "label": "Fabric title"
+      }
+    ]
+  },
+  {
+    "name": "Second fabric collection",
+    "settings": [
       {
         "type": "checkbox",
         "id": "fabric-collection-2",
@@ -574,173 +569,168 @@
         "type": "text",
         "id": "fabric-collection-2_title",
         "label": "Fabric collection title"
-    },
-
-    {
-      "type": "header",
-      "content": "Fabric block 1"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-7",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-7.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-7_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-7_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 2"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-8",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-8.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-8_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-8_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 3"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-9",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-9.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-9_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-9_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 4"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-10",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-10.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-10_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-10_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 5"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-11",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-11.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-11_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-11_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 6"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-12",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-12.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-12_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-12_title",
-      "label": "Fabric title"
-    }
-  ]
-},
-
-
-
-
-{
-  "name": "Third fabric collection",
-  "settings": [
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-7",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-7.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-7_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-7_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-8",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-8.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-8_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-8_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-9",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-9.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-9_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-9_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-10",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-10.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-10_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-10_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-11",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-11.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-11_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-11_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-12",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-12.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-12_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-12_title",
+        "label": "Fabric title"
+      }
+    ]
+  },
+  {
+    "name": "Third fabric collection",
+    "settings": [
       {
         "type": "checkbox",
         "id": "fabric-collection-3",
@@ -750,164 +740,163 @@
         "type": "text",
         "id": "fabric-collection-3_title",
         "label": "Fabric collection title"
-    },
-
-    {
-      "type": "header",
-      "content": "Fabric block 1"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-13",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-13.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-13_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-13_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 2"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-14",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-14.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-14_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-14_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 3"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-15",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-15.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-15_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-15_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 4"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-16",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-16.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-16_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-16_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 5"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-17",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-17.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-17_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-17_title",
-      "label": "Fabric title"
-    },
-    {
-      "type": "header",
-      "content": "Fabric block 6"
-    },
-    {
-      "type": "checkbox",
-      "id": "fabric-18",
-      "label": "Enable"
-    },
-    {
-      "type": "image",
-      "id": "fabric-18.jpg",
-      "label": "Image",
-      "max-width": 500,
-      "info": "500 x 500px recommended"
-    },
-    {
-      "type": "text",
-      "id": "fabric-18_link",
-      "label": "Link URL"
-    },
-    {
-      "type": "text",
-      "id": "fabric-18_title",
-      "label": "Fabric title"
-    }
-  ]
-}
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 1"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-13",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-13.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-13_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-13_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 2"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-14",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-14.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-14_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-14_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 3"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-15",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-15.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-15_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-15_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-16",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-16.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-16_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-16_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 5"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-17",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-17.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-17_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-17_title",
+        "label": "Fabric title"
+      },
+      {
+        "type": "header",
+        "content": "Fabric block 6"
+      },
+      {
+        "type": "checkbox",
+        "id": "fabric-18",
+        "label": "Enable"
+      },
+      {
+        "type": "image",
+        "id": "fabric-18.jpg",
+        "label": "Image",
+        "max-width": 500,
+        "info": "500 x 500px recommended"
+      },
+      {
+        "type": "text",
+        "id": "fabric-18_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "text",
+        "id": "fabric-18_title",
+        "label": "Fabric title"
+      }
+    ]
+  }
 ]

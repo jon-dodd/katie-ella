@@ -27,10 +27,15 @@
 	}
 
 	.article__image {
-		float: right;
-		width: 50%;
-		max-width: 200px;
-		margin: 0 0 $spacing $spacing;
+		width: 100%;
+		margin: 0 0 $spacing 0;
+
+		@media all and (min-width: $palm-start) {
+			float: right;
+			width: 50%;
+			max-width: 300px;
+			margin: 0 0 $spacing $spacing;
+		}
 	}
 
 	.basket__image {

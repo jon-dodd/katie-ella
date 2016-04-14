@@ -20,9 +20,9 @@
 
             <div class="row" id="ProductThumbs">
               {% for image in product.images %}
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                  <a data-toggle="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="toggle-element">
-                    <img src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                  <a style="background-image: url('{{ image.src | img_url: 'grande' }}');" data-toggle="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-main__thumb toggle-element{% if forloop.first == true %} toggle-element--active{% endif %}">
+                    <img src="{{ 'square.gif' | asset_url }}">
                   </a>
               </div>
               {% endfor %}
@@ -56,17 +56,22 @@
             {% endif %}
           </div>
 
-          <form class="form margin--bottom" action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+          <form class="form margin--top margin--bottom" action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
               {% if product.variants.size > 1 %}
                   <div class="row">
                       {% if product.options[0] %}
-                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
                               {% assign used = '' %}
                               <p><label for="select-one">{{ product.options[0] }}</label>
                               <select id='select-one' onchange="letsDoThis()"  class="product-single__variants">
                                   {% for variant in product.variants %}
                                       {% unless used contains variant.option1 %}
-                                          <option value="{{ variant.option1 }}">{{ variant.option1 }} ({{ variant.price | money }})</option>
+                                          <option value="{{ variant.option1 }}">
+                                                {{ variant.option1 }}
+                                                {% if variant.price > product.price %}
+                                                    (+ {{ variant.price | minus: product.price | money }})
+                                                {% endif %}
+                                          </option>
                                           {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
                                       {% endunless %}
                                   {% endfor %}
@@ -74,13 +79,18 @@
                           </div>
                       {% endif %}
                       {% if product.options[1] %}
-                          <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="col-md-4 col-sm-4 col-xs-12">
                               {% assign used = '' %}
                               <p><label for="select-one">{{ product.options[1] }}</label>
                               <select id='select-two' onchange="letsDoThis()"  class="product-single__variants">
                                   {% for variant in product.variants %}
                                       {% unless used contains variant.option2 %}
-                                          <option value="{{ variant.option2 }}">{{ variant.option2 }} ({{ variant.price | money }})</option>
+                                      <option value="{{ variant.option2 }}">
+                                            {{ variant.option2 }}
+                                            {% if variant.price > product.price %}
+                                                (+ {{ variant.price | minus: product.price | money }})
+                                            {% endif %}
+                                      </option>
                                           {% capture used %}{{ used }} {{ variant.option2 }}{% endcapture %}
                                       {% endunless %}
                                   {% endfor %}
@@ -88,13 +98,18 @@
                           </div>
                       {% endif %}
                       {% if product.options[2] %}
-                          <div class="col-md-6 col-sm-6 col-xs-12">
+                          <div class="col-md-4 col-sm-4 col-xs-12">
                               {% assign used = '' %}
                               <p><label for="select-one">{{ product.options[2] }}</label>
                               <select id='select-three' onchange="letsDoThis()"  class="product-single__variants">
                                   {% for variant in product.variants %}
                                       {% unless used contains variant.option3 %}
-                                          <option value="{{ variant.option3 }}">{{ variant.option3 }} ({{ variant.price | money }})</option>
+                                      <option value="{{ variant.option3 }}">
+                                            {{ variant.option3 }}
+                                            {% if variant.price > product.price %}
+                                                (+ {{ variant.price | minus: product.price | money }})
+                                            {% endif %}
+                                      </option>
                                           {% capture used %}{{ used }} {{ variant.option3 }}{% endcapture %}
                                       {% endunless %}
                                   {% endfor %}
@@ -141,11 +156,12 @@
             {{ product.description }}
           </div>
 
-
-
           {% if settings.social_sharing_products %}
             {% include 'social-sharing' %}
           {% endif %}
+
+          <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+
         </div>
 
       </div>
