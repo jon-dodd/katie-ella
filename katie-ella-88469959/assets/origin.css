@@ -3726,6 +3726,11 @@ body {
   display: inline-block;
 }
 
+.product-single__sale-price {
+  color: #dedede;
+  text-decoration: line-through;
+}
+
 .product-main__image img {
   height: 0;
   opacity: 0;

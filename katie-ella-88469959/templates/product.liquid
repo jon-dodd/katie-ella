@@ -35,14 +35,14 @@
                     <meta itemprop="priceCurrency" content="{{ shop.currency }}">
                     <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
                     <div class="product-single__prices">
-                        <span id="ProductPrice" class="h3 product-single__price" itemprop="price">
-                            {% if product.price_varies %}From {% endif %}{{ product.price | money }}
-                        </span>
                         {% if product.compare_at_price > product.price %}
-                            <span id="ComparePrice" class="product-single__sale-price">
+                            <span id="ComparePrice" class="h3 product-single__price product-single__sale-price">
                                 {{ product.compare_at_price_max | money }}
                             </span>
                         {% endif %}
+                        <span id="ProductPrice" class="h3 product-single__price" itemprop="price">
+                            {% if product.price_varies %}From {% endif %}{{ product.price | money }}
+                        </span>
                     </div>
 
                     <form class="form margin--top margin--bottom" action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">

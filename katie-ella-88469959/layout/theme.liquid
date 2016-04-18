@@ -118,20 +118,22 @@
 
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-12">
-                        <h3 class="footer__title">Useful links</h3>
-                        <ul class="list--unstyled footer__links">
+                        <h3 class="align--centre footer__title">Useful links</h3>
+                        <ul class="align--centre list--unstyled footer__links">
                         {% for link in linklists.footer.links %}
                           <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                         {% endfor %}
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-4 not-palm">
-                        <h3 class="footer__title">Contact us</h3>
-                        {{settings.footer_contact_text }}
+                        <h3 class="align--centre footer__title">Contact us</h3>
+                        <div class="align--centre">
+                            {{settings.footer_contact_text }}
+                        </div>
                     </div>
-                    <div class="col-md-3 col-sm-4 not-palm">
-                        <h3 class="footer__title">Social media</h3>
-                        <ul class="list--unstyled footer__links">
+                    <div class="col-md-4 col-sm-4 not-palm">
+                        <h3 class="align--centre footer__title">Social media</h3>
+                        <ul class="align--centre list--unstyled footer__links">
                             <li class="icon-facebook"><a href="https://www.facebook.com/Katie.ella.designs">Facebook</a></li>
                             <li class="icon-twitter"><a href="https://twitter.com/KatieEllaCreate">Twitter</a></li>
                             <!-- <li class="icon-pinterest"><a href="#">Pinterest</a></li> -->

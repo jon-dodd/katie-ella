@@ -75,6 +75,11 @@
 	display: inline-block;
 }
 
+.product-single__sale-price {
+    color: darken($colour-grey,8%);
+    text-decoration: line-through;
+}
+
 .product-main__image {
     img {
         height: 0;
