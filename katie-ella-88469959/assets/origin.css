@@ -3812,6 +3812,10 @@ body {
   float: left;
 }
 
+body {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 .callouts__block {
   display: block;
   position: relative;
@@ -3821,6 +3825,7 @@ body {
   -moz-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+  -webkit-backface-visibility: hidden;
   -webkit-transition: transform 0.2s ease-in-out;
   -ms-transition: transform 0.2s ease-in-out;
   -moz-transition: transform 0.2s ease-in-out;
@@ -3864,6 +3869,7 @@ body {
   position: absolute;
   bottom: 15px;
   right: 15px;
+  -webkit-transform-style: preserve-3d;
 }
 
 /*# sourceMappingURL=origin.css.map */
