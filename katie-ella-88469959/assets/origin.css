@@ -3355,7 +3355,7 @@ fieldset + fieldset {
 }
 
 .nav__dropdown {
-  width: 300px;
+  width: 200px;
   opacity: 0;
   visibility: none;
   position: absolute;
@@ -3517,7 +3517,7 @@ fieldset + fieldset {
   }
   .nav__items .nav__dropdown {
     position: absolute;
-    width: 300px;
+    width: 220px;
     text-align: left;
   }
 }
