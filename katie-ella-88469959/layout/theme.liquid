@@ -156,6 +156,7 @@
       {{ 'Origin.min.js' | asset_url | script_tag }}
 
       {% if template contains 'product' %}
+      {{ 'modaal.js' | asset_url | script_tag }} 
         {% if settings.product_image_zoom_type == 'lightbox'  %}
           {{ 'magnific-popup.min.js' | asset_url | script_tag }}
         {% elsif settings.product_image_zoom_type == 'zoom-in' %}

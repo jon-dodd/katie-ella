@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}
 
 	// Image toggle
-	$('.product-main__image img:first-child').addClass('toggle-element--open');
+	$('.product-main__image a:first-child img').addClass('toggle-element--open');
 	$('.toggle-element').click(function(event) {
 		event.preventDefault();
 
@@ -25,6 +25,11 @@ $(document).ready(function(){
 		$('.product-main__image img').removeClass('toggle-element--open');
 		$("#"+toggle_id).toggleClass('toggle-element--open');
 		$('body').toggleClass(toggle_id+'--open');
+	});
+
+	// Zoom modal
+	$('.zoom').modaal({
+	    type: 'image'
 	});
 
 });

@@ -11,7 +11,9 @@
             <div class="col-md-5 col-sm-5 col-xs-12 margin--bottom-lap">
                 <div class="product-main__image margin--bottom">
                     {% for image in product.images %}
-                        <img id="{{ image.id }}" src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}">
+                        <a href="{{ image.src | img_url: 'original' }}" rel="zoom" class="zoom">
+                            <img id="{{ image.id }}" src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}">
+                        </a>
                     {% endfor %}
                 </div>
 
@@ -19,7 +21,7 @@
                     <div class="row" id="ProductThumbs">
                         {% for image in product.images %}
                             <div class="col-md-3 col-sm-3 col-xs-3">
-                                <a style="background-image: url('{{ image.src | img_url: 'grande' }}');" data-toggle="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-main__thumb toggle-element{% if forloop.first == true %} toggle-element--active{% endif %}">
+                                <a style="background-image: url('{{ image.src | img_url: 'medium' }}');" data-toggle="{{ image.id }}" href="{{ image.src | img_url: '1024x1024' }}" class="product-main__thumb toggle-element{% if forloop.first == true %} toggle-element--active{% endif %}">
                                     <img src="{{ 'square.gif' | asset_url }}">
                                 </a>
                             </div>
