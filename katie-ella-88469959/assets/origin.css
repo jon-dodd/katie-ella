@@ -4533,6 +4533,37 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+.product-main__image .button {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.product-main__image:hover .button {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .product-main__image + .row .col-md-4:nth-child(3n + 4) {
   clear: left;
 }

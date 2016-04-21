@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}
 
 	// Image toggle
-	$('.product-main__image a:first-child img').addClass('toggle-element--open');
+
 	$('.toggle-element').click(function(event) {
 		event.preventDefault();
 
