@@ -11,8 +11,12 @@
             <div class="col-md-5 col-sm-5 col-xs-12 margin--bottom-lap">
                 <div class="product-main__image margin--bottom">
                     {% for image in product.images %}
-                        <a href="{{ image.src | img_url: 'original' }}" rel="zoom" class="button button--pill  zoom">Zoom in</a>
-                        <img class="{% if forloop.first == true %}toggle-element--open{% endif %}" id="{{ image.id }}" src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}">
+                        <div class="product-main__image-inner">
+                            <img class="{% if forloop.first == true %}toggle-element--open{% endif %}" id="{{ image.id }}" src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}">
+                            <a href="{{ image.src | img_url: 'original' }}" rel="zoom" class="button button--pill  zoom">
+                                Zoom in
+                            </a>
+                        </div>
                     {% endfor %}
                 </div>
 

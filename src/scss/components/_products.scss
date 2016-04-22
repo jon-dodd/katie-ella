@@ -110,16 +110,18 @@
         @include prefix(transform, translateY(-10px));
         position: absolute;
         top: $spacing/2;
-        left: $spacing/2; 
+        left: $spacing/2;
     }
 
-    &:hover .button {
-        opacity: 1;
-        visibility: visible;
-        overflow: visible;
-        height: auto;
-        @include prefix(transform, translateY(0px));
-        @include prefix(transition, all $animation-time $easing);
+    .product-main__image-inner:hover {
+        .button {
+            opacity: 1;
+            visibility: visible;
+            overflow: visible;
+            height: auto;
+            @include prefix(transform, translateY(0px));
+            @include prefix(transition, all $animation-time $easing);
+        }
     }
 
     + .row {
